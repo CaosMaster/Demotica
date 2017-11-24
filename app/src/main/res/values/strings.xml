@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Demotica</string>
+    <string name="Luz1">NO</string>
+    <string name="Luz2">SI</string>
+    <string name="Camara1">SI</string>
+    <string name="Camara2">NO</string>
+</resources>

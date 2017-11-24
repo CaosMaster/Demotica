@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txtcamara"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Camara 1"
+        />
+
+    <Switch
+        android:id="@+id/btnswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/Camara1"
+        android:textOff="@string/Camara2"
+        android:layout_toRightOf="@+id/txtcamara"
+        android:layout_marginLeft="20px"
+        android:checked="true"
+        android:onClick="lucesYcamaras"
+
+        />
+
+    <TextView
+        android:id="@+id/txtluz1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Luz 1"
+        android:layout_below="@+id/txtcamara"
+        android:layout_marginTop="20px"
+        />
+
+   <Switch
+       android:id="@+id/btnswitch2"
+       android:textOn="@string/Luz1"
+       android:textOff="@string/Luz2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/txtluz1"
+       android:layout_marginTop="40px"
+       android:paddingLeft="70px"
+       android:onClick="lucesYcamaras"
+       />
+
+    <TextView
+        android:id="@+id/txtcamara2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Camara 2"
+        android:layout_below="@+id/txtluz1"
+        android:paddingTop="30px"
+        />
+
+    <!-- android:textOn="@string/Camara2" cuando sea "ON" pondra el texto que le aparezca en @string/camara2-->
+    <ToggleButton
+        android:id="@+id/btntoogle"
+        android:textOn="@string/Camara2"
+        android:textOff="@string/Camara1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/txtcamara2"
+        android:layout_below="@+id/btnswitch2"
+        android:onClick="lucesYcamaras"
+
+        />
+
+    <TextView
+        android:id="@+id/txtluz2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Luz 2"
+        android:layout_below="@+id/txtcamara2"
+        android:paddingTop="60px"
+        />
+
+    <ToggleButton
+        android:id="@+id/btntoogle2"
+        android:textOn="@string/Luz2"
+        android:textOff="@string/Luz1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/txtluz2"
+        android:layout_below="@+id/btntoogle"
+        android:onClick="lucesYcamaras"
+        />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/btntoogle2"
+        android:layout_marginBottom="20px"
+        >
+
+        <ImageView
+            android:id="@+id/camara1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camara"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/imgbombilla1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bombilla"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/camara2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camara"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/bombilla2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bombilla"
+            android:layout_weight="1"
+
+            />
+
+     </LinearLayout>>
+
+</RelativeLayout>
